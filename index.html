@@ -82,6 +82,22 @@
 
 
 
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="myButton">Klik Bunyi!</button>
+    <audio id="myAudio" src="klik.mp3"></audio>
+
+    <script>
+        var btn = document.getElementById("myButton");
+        var audio = document.getElementById("myAudio");
+
+        btn.addEventListener("click", function() {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
 
 
 
