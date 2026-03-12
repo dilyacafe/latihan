@@ -1,12 +1,13 @@
 
 .tombol-klik {
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
   
   /* Membuat transisi halus saat perubahan ukuran */
   transition: transform 0.1s ease, background-color 0.2s;
@@ -14,6 +15,7 @@
 
 /* Efek saat tombol diklik (mengecil menjadi 95%) */
 .tombol-klik:active {
-  transform: scale(0.95);
+  transform: scale(0.80);
   background-color: #0056b3; /* Warna sedikit gelap saat diklik */
 }
+
