@@ -205,6 +205,26 @@
 <!-- MEMBUAT TOMBOL DENGAN ANIMASI -->
 <button class="tombol-klik">Klik Saya</button>
 
+    </style>
+</head>
+<body>
+
+    <!-- Tombol yang memicu JavaScript -->
+    <button class="button-sound" onclick="playSound()">TOPING!</button>
+
+    <!-- Elemen Audio Tersembunyi -->
+    <audio id="clickSound" src="klik.mp3" preload="auto"></audio>
+
+    <script>
+        function playSound() {
+            var sound = document.getElementById("clickSound");
+            sound.currentTime = 0; // Mengulang suara jika diklik cepat
+            sound.play();
+        }
+    </script>
+
+</body>
+</html>
 
 
 
