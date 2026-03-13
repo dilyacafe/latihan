@@ -137,6 +137,41 @@
 
 
 
+ <style>
+        body { <p align="center">
+  <img src="logo.png" alt="Logo Dilya" width="200" height="200">
+</p> }
+        .button-sound {
+            cursor: pointer;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s; }
+     .button-sound:active { transform: scale(0.95);
+  background-color: #0056b3; /* Warna sedikit gelap saat diklik */ }
+    </style>
+            
+
+    </style>
+</head>
+<body>
+
+    <!-- Tombol yang memicu JavaScript -->
+    <button class="button-sound" onclick="playSound()">logo.png</button>
+
+    <!-- Elemen Audio Tersembunyi -->
+    <audio id="clickSound" src="klik.mp3" preload="auto"></audio>
+
+    <script>
+        function playSound() {
+            var sound = document.getElementById("clickSound");
+            sound.currentTime = 0; // Mengulang suara jika diklik cepat
+            sound.play();
+        }
+    </script>
+
+</body>
+</html>
 
 
 
