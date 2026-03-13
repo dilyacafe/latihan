@@ -115,15 +115,6 @@
 
 
 
-
-
-
-<p align="center">
-  <img src="logo.png" alt="Logo Dilya" width="200" height="200">
-</p>
-
-
-
 <!-- MEMBUAT JUDUL -->
     </style>
 </head>
@@ -150,7 +141,8 @@
 
   /* Efek saat diklik */
   .img-button:active {
-    transform: scale(0.9); /* Mengecil menjadi 90% */
+    transform: scale(0.9); /* Mengecil menjadi 90% */;     <audio id="clickSound" src="klik.mp3" preload="auto"></audio>
+    <script>
   }
 
 </style>
@@ -158,16 +150,10 @@
 <body>
 
   <img src="logo.png" alt="Tombol Gambar" class="img-button">
-    <!-- Elemen Audio Tersembunyi -->
-    <audio id="clickSound" src="klik.mp3" preload="auto"></audio>
-    <script>
-        function playSound() {
-            var sound = document.getElementById("clickSound");
-            sound.currentTime = 0; // Mengulang suara jika diklik cepat
-            sound.play(); }
-    </script>
+   
 </body>
 </html>
+
 
 
 
