@@ -152,31 +152,23 @@
   .img-button:active {
     transform: scale(0.9); /* Mengecil menjadi 90% */
   }
-    <body>
 
-    <!-- Tombol yang memicu JavaScript -->
-    <button class="button-sound" onclick="playSound()"/button>
-
-    <!-- Elemen Audio Tersembunyi -->
-    <audio id="clickSound" src="klik.mp3" preload="auto"></audio>
-
-    <script>
-        function playSound() {
-            var sound = document.getElementById("clickSound");
-            sound.currentTime = 0; // Mengulang suara jika diklik cepat
-            sound.play();
-        }
-    </script>
-
-</body>
 </style>
 </head>
 <body>
 
   <img src="logo.png" alt="Tombol Gambar" class="img-button">
-
+    <!-- Elemen Audio Tersembunyi -->
+    <audio id="clickSound" src="klik.mp3" preload="auto"></audio>
+    <script>
+        function playSound() {
+            var sound = document.getElementById("clickSound");
+            sound.currentTime = 0; // Mengulang suara jika diklik cepat
+            sound.play(); }
+    </script>
 </body>
 </html>
+
 
 
 
