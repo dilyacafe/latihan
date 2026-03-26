@@ -21,55 +21,6 @@
 <br>
 <br>
 
-<!-- MEMBUAT GAMBAR TOMBOL -->    
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<title>Gambar Klik Berdenyut</title>
-<style>
-  body { display: flex; justify-content: center; align-items: center; height: 100vh; }
-  
-  .img-box {
-    width: 200px;
-    transition: transform 0.1s ease;
-  }
-
-  .animate-pulse {
-    animation: pulse-animation 0.5s ease-in-out;
-  }
-
-  @keyframes pulse-animation {
-    100% { transform: scale(1); }
-    50% { transform: scale(0.9); } <!-- PENGATURAN TOMBOL MENGECIL -->  
-    0% { transform: scale(1); }
-  }
-</style>
-</head>
-<body>
-
-  <!-- Ganti 'gambar.jpg' dan 'suara.mp3' dengan file Anda -->
-  <img src="logo.png" id="img" class="img-box" alt="Klik Saya">
-  <audio id="sound" src="klik.mp3"></audio>
-
-<script>
-  const img = document.getElementById('img');
-  const sound = document.getElementById('sound');
-
-  img.addEventListener('click', () => {
-    sound.currentTime = 0;
-    sound.play();
-    img.classList.add('animate-pulse');
-    setTimeout(() => img.classList.remove('animate-pulse'), 500);
-  });
-</script>
-
-</body>
-</html>
-
-<br>
-<br>
 
 <!-- MEMBUAT TOMBOL -->
 
@@ -163,6 +114,62 @@
 
 </body>
 </html>
+
+<br>
+<br>
+
+
+<!-- MEMBUAT GAMBAR TOMBOL -->    
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Gambar Klik Berdenyut</title>
+<style>
+  body { display: flex; justify-content: center; align-items: center; height: 100vh; }
+  
+  .img-box {
+    width: 200px;
+    transition: transform 0.1s ease;
+  }
+
+  .animate-pulse {
+    animation: pulse-animation 0.5s ease-in-out;
+  }
+
+  @keyframes pulse-animation {
+    100% { transform: scale(1); }
+    50% { transform: scale(0.9); } <!-- PENGATURAN TOMBOL MENGECIL -->  
+    0% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Ganti 'gambar.jpg' dan 'suara.mp3' dengan file Anda -->
+  <img src="logo.png" id="img" class="img-box" alt="Klik Saya">
+  <audio id="sound" src="klik.mp3"></audio>
+
+<script>
+  const img = document.getElementById('img');
+  const sound = document.getElementById('sound');
+
+  img.addEventListener('click', () => {
+    sound.currentTime = 0;
+    sound.play();
+    img.classList.add('animate-pulse');
+    setTimeout(() => img.classList.remove('animate-pulse'), 500);
+  });
+</script>
+
+</body>
+</html>
+
+<br>
+<br>
+
+
 
 
 
